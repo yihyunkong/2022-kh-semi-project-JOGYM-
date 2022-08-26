@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>JO GYM Admin Login</title>
+    <link defer rel="stylesheet" href="./admin-login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="./admin-login.js"></script>
+</head>
+<body>
+    <!-- 로그인 폼 시작 -->
+    <div class="wrap">
+        <div class="login">
+            <h2>JOGYM</h2>
+            <br>
+            <h3>관리자 로그인</h3>
+            <!-- 이메일 로그인 - 이메일 input -->
+            <div class="login_id">
+                <h4>E-mail</h4>
+                <input type="email" name="" id="adminLoginEmail" placeholder="Admin Email">
+            </div>
+            <!-- 이메일 로그인 - 패스워드 input -->
+            <div class="login_pw">
+                <h4>Password</h4>
+                <input type="password" name="" id="adminLoginPwd" placeholder="Admin Password">
+            </div>
+            <!-- 이메일/패스워드 기억하기 -->
+            <div class="login_etc">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="rememberMe"> Remember Me?
+                </div>
+            </div>
+            <!-- 로그인 버튼 -->
+            <div class="submit">
+                <input type="submit" value="Login" id="adminLoginBtn">
+            </div>
+            <div class="submit">
+                <input type="button" value="Join" id="adminSignBtn" onclick="location.href='../admin-join/admin-join.html'"></input>
+            </div>
+        </div>
+    </div>
+    <!-- 로그인 폼 끝 -->
+</body>
+</html>

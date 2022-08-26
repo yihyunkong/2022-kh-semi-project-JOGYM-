@@ -1,0 +1,467 @@
+/* * {
+  border: solid 1px pink;
+} */
+
+html{
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* display: inline-flex; */
+}
+
+header{
+  background-color: rgb(68, 75, 88);
+  padding: 60px 160px 60px 80px;
+}
+
+div.tap {
+  border: 3px solid red;
+  float: right;
+}
+
+header h1{
+  display: inline-block;
+  color: white;
+  font-style: inherit;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+}
+
+header div.bar{
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 20px;
+  padding-left: 10px;
+  width: 60%;
+  background-color: rgb(134, 155, 194);
+  color: white;
+  font-size: large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+}
+
+.big{
+  display: flex;
+}
+
+.nav-item{
+  border: 0.3px solid rgba(219, 212, 248, 0.527);
+  padding: 30px 0% 30px 0%;
+  /* margin-bottom: 30px; */
+  font-size: 19px;
+}
+
+a.nav-link{
+  color: gray;
+  width: 100%;
+}
+
+section{
+  display: flex;
+  background-color: rgb(247, 248, 243);
+}
+
+.sec{
+  display: flex;
+}
+
+aside{
+  /* background-color:cyan; */
+  width: fit-content;
+  background-color: white;
+  top:0;
+  bottom: 0;
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 50px 10px;
+  /* background-color: bisque; */
+}
+
+.container{
+  /* display: flex; */
+  width:80%;
+  height:100%;
+  margin-bottom: 100px;
+  padding: 10px 100px 10px 100px;
+}
+
+footer>div.settings {
+  background-color: rgb(72, 72, 72);
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.settings>button{
+  background-color: rgb(255, 255, 255);
+  float: right;
+}
+
+/* ************************* container 부분 시작 ********************** */
+.register-form{
+  border-radius: 15px;
+  margin: 20px 30px 30px 30px;
+  padding: 30px 30px 10px 30px;
+  height: 900px;
+  background-color: rgb(251, 247, 252);
+}
+
+.register-form h2, h3 {
+  padding-top: 10px;
+  color:rgb(172, 172, 172);
+}
+
+.input-title {
+  background-color: rgb(255, 253, 250);
+  padding-left: 20px;
+  border: none;
+  background: transparent;
+  width:100%;
+  font-size: 35px;
+}
+
+#textarea-content {
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  height: 350px;
+  border: none;
+  background: transparent;
+  background-color: rgb(255, 253, 250);
+  font-size: 30px;
+}
+
+.submit {
+  padding: 10px 30px 0px 30px;
+  text-align: right;
+}
+
+.submit>input{
+  height: 50px;
+  width: 80px;
+  font-size: 25px;
+  border:none;
+}
+
+.record{
+  border: none;
+  width: 100%;
+}
+
+/* ********** 공지사항 목록 *********** */
+a.title-URL {
+  color:darkslategrey;
+  text-decoration: none;
+}
+
+.th-checkbox {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.select-all {
+  padding: 10px 30px 0px 30px;
+  text-align: left;
+}
+
+div.input-group{
+  font-size: larger;
+  margin: 10px 0px 30px 10px;
+  text-align: right;
+}
+
+#btn-select-all{
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  border:none;
+  float: left;
+  margin: 30px 30px 30px 30px
+}
+
+#btn-delete{
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  border: none;
+  float: right;
+  margin: 30px 30px 30px 30px
+}
+
+#searchBox{
+  float: right;
+  width: 300px;
+  height: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+
+#buttons {
+  text-align: center;
+  font-size: larger;
+}
+
+.table{
+  font-size: x-large;
+}
+
+/*********** 공지사항 상세보기 ************/
+/* .dtail-form{
+  background-color: aqua;
+  display:block;
+  width: 500px;
+} */
+
+
+.backToList {
+  width: 80px;
+  height : 40px;
+  border-radius: 4px;
+  border : 0px;
+  outline: 0px;
+  color: white;
+  font-size: larger;
+  background-color: skyblue;
+  text-decoration: none;
+}
+
+.backToList:active{
+  outline: none;
+  box-shadow: none;
+  color: white;
+}
+
+#title { 
+  margin-left: 30px;
+  padding-top: 50px;
+  font-weight:bolder;
+  color: #2b6baa;
+  margin-bottom: 20px;
+}
+
+.writer, .regdate{
+  font-size: x-large;
+  color: #2c292a;
+  margin-left: 30px;
+}
+
+.hit {
+  font-size: large;
+  color: #2c292a;
+}
+
+/* 상세조회 글이 띄워질 span */
+.content-set{
+  width: 90%;
+  height: 500px;
+  margin: 50px 40px 20px 40px;
+  padding:20px 20px 500px 20px;
+  font-size: larger;
+  background-color: white;
+  border: 4px solid rgb(246, 240, 246);
+}
+
+.dtail-body {
+  padding: 0px 30px 100px 30px;
+  background-color: rgb(247, 247, 215);
+}
+
+
+summary {
+  display: block;
+  padding-right: 20px;
+  cursor:pointer;
+  list-style: none;
+}
+
+details{
+  display: block;
+  text-align: right;
+}
+
+details>button{
+  border: 0.2px rgb(226, 226, 226)k;
+  background-color: aliceblue;
+  color: darkgray;
+  font-size: smaller;
+}
+
+/* 트레이너 등록 */
+fieldset{
+  display: flex;
+  padding: 40px 40px 40px 40px;
+}
+
+picture{
+  display: inline-block;
+  padding-top: 40px;
+  width: 500px;
+  height: 500px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: solid 3px rgb(223, 224, 226); 
+  text-align: center;
+}
+
+#myimg{
+  border-radius: 10px;
+  height:200px;
+  width:200px;
+  border: solid 2px yellow;
+  background-color: white;
+}
+
+.trainer-reg-form {
+  width:100%;
+  display: inline-block;
+  padding: 80px 30px 20px 30px;
+}
+
+.form-select{
+  margin-left: 10px;
+}
+
+.form-control{
+  height: 50px;
+}
+
+/* 트레이너 상세보기 */
+.card-body{
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: white;
+  border: solid 3px rgb(229, 235, 235);
+}
+
+/* 관리자 페이지 > 트레이너 관리 */
+#t-select-program {
+  margin-right: 50px;
+}
+
+
+#tName {
+  font-size: 40px;
+  border-radius: 10px;
+  color: white;
+  padding-right: 30px;
+  background-color: #3e3e3e;
+}
+
+#tProgram{
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  padding-right: 30px;
+  font-weight: bolder;
+  font-style: oblique;
+  background-color: rgb(56, 65, 100);
+}
+
+#tMotto, #tCareer{
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  padding-right: 30px;
+  font-weight: bolder;
+  font-style: oblique;
+  background-color: rgb(249, 189, 47);
+}
+
+input[name="delete"]{
+  float:right; 
+  margin:5px 10px 5px 0px; 
+  border-radius: 10px; 
+  border: none; 
+  color:white; 
+  background-color: rgb(24, 24, 24); 
+  width:80px; 
+  height: 40px;
+}
+
+input[value="수정"]{
+  /* float: center; */
+  margin-top:20px;
+  /* margin-left:333px; */
+  border-radius:10px; 
+  border:none; 
+  color:white; 
+  background-color: rgb(24, 24, 24); 
+  width:80px; 
+  height: 40px;
+}
+
+input[name="select"]{
+  float:left; 
+  margin:5px 10px 5px 0px; 
+  border-radius: 10px; 
+  border: none; 
+  color:white; 
+  background-color: rgb(24, 24, 24); 
+  width:80px; 
+  height: 40px;
+}
+
+
+/* 관리자 페이지 > 강좌생성 style */
+.reservation-set{
+  padding:50px;
+  margin-bottom: 50px;
+  background-color: rgb(216, 252, 254);
+  border: 5px solid rgb(242, 180, 180);
+  border-radius: 20px;
+  color:#676767;
+}
+
+#selectTrainerOption, #selectTime , #startDay, #endDay{
+  width: 100%;
+  height: 50px;
+  padding-left: 40px;
+  border-radius: 10px;
+}
+
+.trainer-set, .program-set, .period-set, .time-set, .day-set {
+  padding:30px 40px 50px 10px;
+}
+
+#programOuto{
+  text-align: center;
+  padding:30px 40px 30px 40px;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: rgb(214, 214, 246);
+  border-radius: 20px;
+}
+
+.form-check{
+  font-size: larger;
+}
+
+.form-check:hover {
+  font-size: x-larger;
+  color: crimson;
+}
+
+#createProgram{
+  text-align: center;
+}
+
+#program-submit{
+  border: none;
+  width:150px;
+  height: 60px;
+  color: aliceblue;
+  background-color:rgb(232, 145, 137);
+  border-radius: 2px;
+  font-size: x-large;
+}
+

@@ -1,0 +1,425 @@
+/* * {
+    border: 1px solid red
+} */
+
+/***************************** header CSS 시작 ******************************/
+header {
+    background-color: skyblue;
+    background: url("./src/imgs/gym-back.jpeg");
+}
+
+.tap {
+    padding: 10px;
+}
+
+.tap a {
+    /* color: white; */
+    padding: 0px 5px 0px 5px;
+    font-size: 15px;
+}
+
+.member {
+    float: right;
+}
+
+.membership {
+    float: right;
+}
+
+.logo h1 {
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-size: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.logo a {
+    text-decoration: none; color: hwb(0 100% 0%);
+}
+
+.logo img {
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+.contents {
+    padding: 60px 150px 50px 150px;
+
+}
+/****************************** header CSS 끝 *******************************/
+
+
+
+/***************************** session CSS 시작 ******************************/
+.home-pic {
+    /* width: 100%; */
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: url("./src/imgs/home-back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contents-box {
+    /* width: 100%; */
+    margin: 20px;
+}
+
+.p-2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.contents-title {
+    padding-left: 10px;
+    color: white;
+    background-color: #212529;
+}
+
+.contents-obj {
+    padding: 10px;
+}
+
+/************ 공지사항 미리보기 시작 **************/
+.btn-list{
+    margin: 0px 0px 10px 100%;
+    float: right;
+    border: none;
+    background-color: #212529;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.list-data{
+    font-size: large;
+    list-style: none;
+    line-height: 40px;
+}
+
+a.preview-a{
+    color: #212529;
+    text-decoration: none;
+}
+
+a.preview-a:hover{
+    color: #ac3cfd95;
+    text-decoration: none;
+}
+
+
+/******************* trainer-list.html  ********************/
+/******************* dtail-page.html  ********************/
+
+
+.backToList {
+    width: 80px;
+    height : 40px;
+    border-radius: 4px;
+    border : 0px;
+    outline: 0px;
+    color: white;
+    font-size: larger;
+    background-color: skyblue;
+    text-decoration: none;
+}
+
+.backToList:active{
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+#title { 
+    padding-top: 100px;
+    font-weight:bolder;
+    color: #2b6baa;
+    margin-bottom: 20px;
+}
+
+.writer, .regdate{
+    font-size: x-large;
+    color: #2c292a;
+    margin-right: 10px;
+}
+
+.hit {
+    font-size: large;
+    color: #2c292a;
+}
+
+.content {
+    margin: 50px 40px 20px 40px;
+    font-size: larger;
+}
+
+.dtail-body {
+    padding: 0px 30px 100px 30px;
+    background-color: rgb(247, 247, 215);
+}
+/****************************** session CSS 끝 *******************************/
+/* tab 스타일 */
+a.nav-link {
+    margin-top: 30px;
+    color: rgb(105, 105, 105);
+    font-size: 25px;
+}
+a.nav-link:hover {
+    background-color: #3366cc;
+    color: white;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.inline-box {
+    display: inline-flex;
+    background: transparent;
+    margin:0px 10px 30px 10px;
+    border: solid 3px rgb(133, 133, 133);
+    width:350px;
+    height: 600px;
+    border-radius: 10px;
+/*첫번째 값: 왼쪽 상단,  두번째 값: 오른쪽 상단, 세번째 값: 오른쪽 하단, 네번째 값: 왼쪽 하단*/
+}
+
+.card-body{
+    margin: 40px 30px 0px 30px;
+    text-align: right;
+}
+
+.trainerImg{
+    border: none;
+}
+
+#tName {
+    font-size: 40px;
+    border-radius: 10px;
+    color: white;
+    padding-right: 30px;
+    background-color: #3e3e3e;
+}
+
+#tProgram{
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    padding-right: 30px;
+    font-weight: bolder;
+    font-style: oblique;
+    background-color: rgb(56, 65, 100);
+}
+
+#tMotto, #tCareer{
+    font-size: 30px;
+    border-radius: 10px;
+    color: white;
+    padding-right: 30px;
+    font-weight: bolder;
+    font-style: oblique;
+    background-color: rgb(249, 189, 47);
+}
+
+/****************************** footer CSS 시작 *******************************/
+.site-footer {
+    background-color:rgb(247, 247, 241);
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+
+.site-footer hr {
+    border-top-color:#bbb;
+    opacity:0.5
+}
+
+.site-footer hr.small {
+    margin:20px 0
+}
+
+.site-footer h6 {
+    color: black;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+
+.site-footer a {
+    color:#737373;
+}
+
+.site-footer a:hover {
+    color:#3366cc;
+    text-decoration:none;
+}
+
+.footer-links {
+    padding-left:0;
+    list-style:none
+}
+
+.footer-links li {
+    display:block
+}
+
+.footer-links a {
+    color:#737373
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+    color:#3366cc;
+    text-decoration:none;
+}
+
+.footer-links.inline li {
+    display:inline-block
+}
+
+.site-footer .social-icons {
+    text-align:right
+}
+
+.site-footer .social-icons a {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+
+.copyright-text {
+    margin:0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-]
+    {
+    margin-bottom:30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer
+    {
+    padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+    text-align:center
+    }
+}
+
+.social-icons {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+
+.social-icons li {
+    display:inline-block;
+    margin-bottom:4px
+}
+
+.social-icons li.title {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
+
+.social-icons a {
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+    color:#fff;
+    background-color:#29aafe
+}
+
+.social-icons.size-sm a {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+}
+
+.social-icons a.facebook:hover {
+    background-color:#3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color:#00aced
+}
+
+.social-icons a.instagram:hover {
+    background-color:#007bb6
+}
+
+.social-icons a.envelope:hover {
+    background-color:#ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title
+    {
+    display:block;
+    margin-right:0;
+    font-weight:600
+    }
+}
+/******************************** footer CSS 끝 ********************************/
+/*  공지사항 리스트 & 페이지네이션 CSS */
+a.title-URL{
+    color: #212529;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a.title-URL:hover{
+    color: #ac3cfd95;
+    text-decoration: none;
+}
+
+#buttons{
+    text-align: center;
+    font-size: 20px;
+}
+
+

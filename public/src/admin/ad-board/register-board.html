@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Admin index</title>
+  
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f414dffd5c.js" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+    <script type="module" src="../admin-index.js"></script>
+  </head>
+  <body>
+    <!-- firebase 스크립트 -->
+    <script type="module" src="../../js/module_input.js" defer></script>
+    <header>
+      <!-- 북마크/로그인/회원가입 시작 -->
+          <div class="tap">
+            <div class="member">
+                <div id="adminDisplayNameAppend">
+                    <!-- append -->
+                </div>
+                <button id="loginBtn"><a href="../admin-login/admin-login.html">LOGIN</a></button>
+            </div>  
+            </div>
+        <!-- 북마크/로그인/회원가입 끝 -->
+      <h1>
+        <i class="fa-solid fa-screwdriver-wrench"></i> 
+        Admin Home
+      </h1>
+      <div class="bar">
+        By JOGYM
+      </div>
+    </header>
+    <!-- 부트스트랩 nav 시작 -->
+  <section>
+    <aside>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">
+            <i class="fa-solid fa-house-chimney-window"> main</i>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+            data-bs-toggle="dropdown" 
+            href="#" role="button" 
+            aria-expanded="false">
+            <i class="fa-solid fa-person"> member</i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" href="../admin-member/userManager.html"> 
+                <i class="fa-solid fa-ellipsis"> 회원관리</i>
+                </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+            data-bs-toggle="dropdown" 
+            href="#" role="button" 
+            aria-expanded="false">
+            <i class="fa-solid fa-street-view"> trainer</i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="../ad-trainer/register-trainer.html">
+              <i class="fa-solid fa-ellipsis"> 등록</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../ad-trainer/settings-trainer.html">
+              <i class="fa-solid fa-ellipsis"> 기타관리</i>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+            data-bs-toggle="dropdown" 
+            href="#" role="button" 
+            aria-expanded="false">
+            <i class="fa-solid fa-calendar-check"> program</i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="../ad-program/programCreate.html"> 
+                <i class="fa-solid fa-ellipsis"> 강좌생성</i>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+            data-bs-toggle="dropdown" 
+            href="./setting-board.html" role="button" 
+            aria-expanded="false">
+            <i class="fa-solid fa-list"> board</i>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="./register-board.html">
+                <i class="fa-solid fa-ellipsis"> 등록</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./setting-board.html">
+                <i class="fa-solid fa-ellipsis"> 기타관리</i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+      <!-- 부트스트랩 nav 끝 -->
+
+    <div class="main">
+      <h2>
+        <br> 
+        <i class="fa-solid fa-pencil">  공지사항 등록</i>
+      </h2>
+      <hr>
+      <div class="container">
+            <div class="submit">
+                  <input id="btn-register" type="button" value="등록">
+            </div>
+            <div class="register-form">
+                  <div class="div-title">
+                    <h1 class="h1-title"> 제목 </h1>
+                    <!--  .input-title 들어갈 자리 -->
+                  </div>
+                  <hr>
+                      <!-- 사진첨부버튼 시작 -->
+                        <button id="selbtn">
+                          <i class="fa-solid fa-image fa-2x"></i>
+                        </button>
+                        <input type="text" id="namebox" style="height:40px; padding-top:10px;"> 
+                        <label id="extlab"></label>
+                      <!-- 사진첨부버튼 끝 -->
+                  <hr>
+                  <img id="myimg" style="margin:10px 10px 20px 30px; width: 150px; height: 150px"> 
+                  <label id="upprogress"></label> <br><br> 
+                  <div class="div-contents">
+                    <h2 class="h2-contents"> 내용을 입력하세요.</h2>
+                    <!--  #textarea-content 들어갈 자리 -->
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <footer> 
+        <div class="settings">
+        <button>
+          <!-- admin page 에서 나갈 수 있는 버튼입니다.
+          'click' 이벤트 발생 시 => 정말로 나가겠습니까? -->
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+        </div>
+    </footer>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

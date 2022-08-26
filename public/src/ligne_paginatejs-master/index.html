@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination Demo</title>
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/paginate.css">
+    <link rel="stylesheet" href="css/ligne.css">
+    
+</head>
+<body>
+    <!-- firebase 스크립트 -->
+    <script type="module" src="../list_module.js" ></script>
+    <script type="module" src="js/paginate.js"></script>
+<div class="container">
+    <div>
+        <h1>Pagination Demo</h1>
+    </div>
+    <div class="panel">
+        <div class="body">
+            <div class="input-group">
+                <label for="searchBox">Filtrar</label>
+                <input type="search" id="searchBox" placeholder="검색어를 입력하세요.">
+            </div>
+        </div>
+    </div>
+    <table class="myTable table hover">
+        <tr>
+            <th>no</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>조회수</th>
+        </tr>
+        <tbody class="board-content">
+            <!-- firebase 저장소의 doc.data가 들어갈 자리입니다. -->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
